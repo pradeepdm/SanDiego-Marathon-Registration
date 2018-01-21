@@ -1,0 +1,64 @@
+/*
+Mallikarjun, Pradeep
+Jadran Id: Jadrn033
+Project #2
+Fall 2017 */
+
+* {
+    font-family: 'Century Gothic';
+}
+
+body {
+    margin: 0px;
+    padding: 3px;
+}
+
+#header {
+    text-align: center;
+    display: inline;
+}
+
+#header-logo {
+    margin: 5px 10px 0 0;
+    width: 80px;
+    border-radius: 40%;
+}
+
+#welcome-image > img {
+    width: 100%;
+}
+
+#header-name {
+    font-size: 70px;
+    font-family: headerfont;
+    text-shadow: 3px 3px 3px rgb(61, 61, 61);
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#content {
+    padding: 25px;
+}
+
+#fancy-title {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(61, 61, 61);
+    text-shadow: 3px 3px 3px rgb(61, 61, 61);
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #70C5E4;
+}
+
+#footer{
+    background-color: #70C5E4;
+    padding: 8px;
+}
+
+#footer-text{
+    margin-left:32rem;
+}
+

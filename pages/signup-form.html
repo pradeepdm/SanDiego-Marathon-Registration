@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+     Mallikarjun, Pradeep
+     Jadran Id: Jadrn033
+     Project #3
+     Fall 2017
+     -->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../styles/signup-form.css" type="text/css"/>
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+    <title>SDSU Marathon</title>
+</head>
+
+<body>
+<div class="form-style">
+    <form id="account-creation" method="post" enctype="multipart/form-data"
+          action="../server-scripts/process_request.php" name="account-creation"
+          autocomplete="off">
+        <fieldset>
+            <legend>Participant Details</legend>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" autofocus>
+
+            <label for="middlename">Middle Name</label>
+            <input type="text" name="middlename" id="middlename">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname">
+
+            <label for="addressone">Address 1</label>
+            <input type="text" name="address1" id="addressone">
+
+            <label for="addresstwo">Address 2</label>
+            <input type="text" name="address2" id="addresstwo">
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" size="25">
+
+            <label for="state">State</label>
+            <input type="text" name="state" id="state" maxlength="2">
+
+            <label for="zip">Zip</label>
+            <input type="text" pattern="[0-9]{5}" name="zip" id="zip" maxlength="5" placeholder="#####">
+
+            <label>Primary Phone</label> (
+            <input class="telephone" type="tel" name="area_code" maxlength="3">)
+            <input class="telephone" type="tel" name="digit_exchange" maxlength="3"> -
+            <input class="telephone" type="tel" name="subscriber_no" maxlength="4">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="15">
+
+            <label for="gender-type">Gender</label>
+            <fieldset class="fieldset-style" id="gender-type">
+                <input id="male" name="gender" type="radio" value="male">
+                <label for="male">Male</label>
+                <input id="female" name="gender" type="radio" value="female">
+                <label for="female">Female</label>
+                <input id="other" name="gender" type="radio" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <label for="dob">Date of Birth</label>
+            <fieldset class="fieldset-style" id="dob">
+                <label for="mm">mm</label>
+                <input id="mm" name="month" type="text" maxlength="2" pattern="(0[1-9]|1[012])">
+                <label for="dd">dd</label>
+                <input id="dd" name="day" type="text" maxlength="2" pattern="(0[1-9]|[12][0-9]|3[01])">
+                <label for="yyyy">yyyy</label>
+                <input id="yyyy" name="year" type="text" maxlength="4" pattern="(19|20)\d\d">
+            </fieldset>
+
+            <label for="medical-conditions">Medical Conditions</label>
+            <textarea rows="4" name="medicalconditions" id="medical-conditions"
+                      placeholder="Enter medical conditions, if any"></textarea>
+
+            <label for="experience-level">Experience Level</label>
+            <fieldset id="experience-level" class="fieldset-style">
+                <input id="expert" name="experiencelevel" type="radio" value="expert">
+                <label for="expert">Expert</label>
+                <input id="experienced" name="experiencelevel" type="radio" value="experienced">
+                <label for="experienced">Experienced</label>
+                <input id="novice" name="experiencelevel" type="radio" value="novice">
+                <label for="novice">Novice</label>
+            </fieldset>
+
+            <label for="category">Category</label>
+            <fieldset id="category" class="fieldset-style">
+                <input id="teen" name="age" type="radio" value="teen">
+                <label for="teen">Teen</label>
+                <input id="adult" name="age" type="radio" value="adult">
+                <label for="adult">Adult</label>
+                <input id="senior" name="age" type="radio" value="senior">
+                <label for="senior">Senior</label>
+            </fieldset>
+
+            <label for="user_pic">Upload Image</label>
+            <input type="file" name="user_pic" id="user_pic" accept="image/*">
+
+        </fieldset>
+
+        <input type="reset" id="reset-btn" value="Reset"/>
+        <input id="submit-btn" type="submit" value="Register"/>
+
+    </form>
+    <h4 id="error_line">&nbsp;</h4>
+</div>
+</body>
+
+</html>

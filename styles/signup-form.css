@@ -1,0 +1,139 @@
+/*
+Mallikarjun, Pradeep
+Jadran Id: Jadrn033
+Project #2
+Fall 2017 */
+
+body {
+    background: #f4f7f8 url("../images/signup-bkg.jpg");
+}
+
+.form-style {
+    max-width: 30em;
+    padding: 8px 25px;
+    margin: 15px;
+    border-radius: 5px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style legend {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style input[type="file"],
+.form-style textarea,
+.form-style select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #0D1013;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.telephone {
+
+    width: 22%;
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    outline: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #0D1013;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    display: inline;
+
+}
+
+.form-style input[type="text"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style input[type="tel"]:focus,
+.form-style input[type="file"]:focus,
+.form-style textarea:focus,
+.form-style select:focus {
+    background: #1abc9c;
+}
+
+.form-style input[type="submit"],
+.form-style input[type="reset"],
+.form-style input[type="button"] {
+    position: relative;
+    padding: 10px 38px 10px 35px;
+    color: #FFF;
+    margin: 30px auto;
+    background: #1abc9c;
+    font-size: 25px;
+    text-align: center;
+    font-style: normal;
+    border: 1px solid #16a085;
+}
+
+.form-style input[type="submit"]:hover,
+.form-style input[type="reset"]:hover,
+.form-style input[type="button"]:hover {
+    background: #109177;
+}
+
+.fieldset-style {
+    background-color: #e8eeef;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#mm, #dd, #yyyy {
+    width: 50px;
+    display: inline;
+    margin-bottom: 0px;
+}
+
+#submit-btn {
+    float: right;
+}
+
+#error-block {
+    position:absolute;
+    top:35px;
+    left:600px;
+    border: 1px solid red;
+    color: black;
+    width: 50%;
+    overflow-y: auto;
+}
+
+#error_line{
+    position:fixed;
+    top:35px;
+    left:600px;
+    color: red;
+    width: 50%;
+    overflow-y: auto;
+}
+
