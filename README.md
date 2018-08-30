@@ -1,4 +1,4 @@
-# CameraStore 
+# Marathon-Registration
 
 ## Contributors
  Pradeep Devarabetta Mallikarjun
